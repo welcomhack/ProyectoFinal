@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ProyectoHTML_CSS</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=K2D:100,300,400,500i,700,700i" rel="stylesheet">
+    <!-- Scroll -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="js/scrollomatic.js"></script>
+  <!-- Scroll -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/prefixfree.js"></script>
+
+    <script>
+        /* Seleciona el documento y cuando esté cargado, haga la funsion selecciona todos las etiquetas "a" que tengan la clase "scroll" y les aplique scrollomatic()*/
+        $(document).ready(function(){
+            $("a.scroll").scrollomatic();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <a href="#home" class="scroll">
+            <div id="logo"></div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#home" class="scroll">Home</a></li>
+                <li><a href="#tema" class="scroll">Temas</a></li>
+                <li><a href="#galeria" class="scroll">Galeria</a></li>
+                <li><a href="#contacto" class="scroll">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main id="contenido">
+        <video autoplay loop preload="auto">
+            <source src="video/video.mp4" type="video/mp4">
+            <source src="video/video.ogv" type="video/ogv">
+            <source src="video/video.webm" type="video/webm">
+            <p>Su navegador no soporta este video</p>
+        </video>
+        <section id="home">
+            <div id="globo"></div>
+            <h2>Bienvenidos a mi pagina Web</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem soluta corrupti necessitatibus sequi adipisci, doloribus in repellat consequatur. Officia voluptatum eaque, libero id nulla quisquam facere hic dolore expedita eos?</p>
+            <a href="#temas" class="scroll">Conoce más</a>
+            <div id="abajo"></div>
+        </section>
+        <section id="temas">
+            <h3>Temas</h3>
+            <article>
+                <div id="imagen1"></div>
+                <h4>Subtitulos nivel 4</h4>
+                <p>Simulacion de texto aquí, texto descriptivo aqui</p>
+                <a href="#home" class="scroll">Leer más</a>
+                <div id="imagen2"></div>
+                <h4>Subtitulos nivel 4</h4>
+                <p>Simulacion de texto aquí, texto descriptivo aqui</p>
+                <a href="#home" class="scroll">Leer más</a>
+                <div id="imagen3"></div>
+                <h4>Subtitulos nivel 4</h4>
+                <p>Simulacion de texto aquí, texto descriptivo aqui</p>
+                <a href="#home" class="scroll">Leer más</a>
+            </article>
+        </section>
+        <section id="galeria">
+            <h3>Galeria</h3>
+            <div id="fotos">
+                <a href="#home" title="Imagen1" class="scroll"><img src="img/1.jpg" alt="Imagen1"></a>
+                <a href="#home" title="Imagen2" class="scroll"><img src="img/2.jpg" alt="Imagen2"></a>
+                <a href="#home" title="Imagen3" class="scroll"><img src="img/3.jpg" alt="Imagen3"></a>
+                <a href="#home" title="Imagen4" class="scroll"><img src="img/4.jpg" alt="Imagen4"></a>
+                <a href="#home" title="Imagen5" class="scroll"><img src="img/5.jpg" alt="Imagen5"></a>
+                <a href="#home" title="Imagen6" class="scroll"><img src="img/6.jpg" alt="Imagen6"></a>
+                <a href="#home" title="Imagen7" class="scroll"><img src="img/7.jpg" alt="Imagen7"></a>
+                <a href="#home" title="Imagen8" class="scroll"><img src="img/8.jpg" alt="Imagen8"></a>
+                <a href="#home" title="Imagen9" class="scroll"><img src="img/9.jpg" alt="Imagen9"></a>
+            </div>
+        </section>
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <div id="formulario">
+                <form action="#" method="POST" target="_blank">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Telefono" required pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{4}$" title="Debe ser un numero telefonico escrito de esta forma 'XXX XXX XXXX' teniendo en cuenta los espacios">
+                    <textarea name="textarea" id="xtxarea" cols="30" rows="10" placeholder="Mensaje"  required></textarea>
+                    <input type="submit" value="Enviar">
+
+                </form>
+            </div>
+            <div id="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4086.466705029899!2d-76.65905541846429!3d5.6939337609849145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e488f747c08e8a9%3A0xb9680d7d5fe86b8a!2zUXVpYmTDsywgQ2hvY8Oz!5e0!3m2!1ses-419!2sco!4v1539469175389" width="300" height="300"></iframe>
+            </div>
+            <a href="#contenido" class="arriba scroll"></a>
+        </section>
+
+        <footer>
+            <p>
+                Copyright &copy; 2018 Welcomhack-Todos los derechos reservados
+            </p>
+        </footer>
+    </main>
+
+
+</body>
+</html>
